@@ -25,5 +25,4 @@ See `contributing.qmd` (or `CONTRIBUTING.md`) for how to propose and write a new
 
 ## Licence
 
-- Text: CC-BY 4.0 (`LICENSE-CONTENT`). TODO: confirm with user.
-- Code: MIT (`LICENSE`). TODO: confirm code licence with user (BSD-3 is the alternative).
+The whole repository — both text and example code — is licensed under the Creative Commons Attribution-ShareAlike 4.0 International licence (CC BY-SA 4.0). See `LICENSE`.

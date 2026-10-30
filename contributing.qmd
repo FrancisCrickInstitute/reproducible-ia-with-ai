@@ -27,4 +27,5 @@ A new example must include:
 - Write in **British English** (analyse, colour, labelled, localisation).
 - Explain jargon the first time it appears, and assume the reader has little or no programming experience.
 - Do not invent results, citations, URLs or version numbers. Mark anything unverified with a visible `TODO`.
+- The whole repository (text and code) is licensed CC BY-SA 4.0; new examples must be compatible with that.
 - Show scripts with the `include-code-files` filter rather than pasting them in.

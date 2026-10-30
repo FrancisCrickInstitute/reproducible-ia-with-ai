@@ -11,7 +11,8 @@ A **Quarto book** of worked examples teaching non-computational biologists to us
 - The book skeleton and all pages are written: `_quarto.yml`, the four supporting pages, `examples/_template.qmd`, Example 1 (full), and stubs 02–06. `quarto render` produces `_book/` with **no errors or warnings**.
 - Example 1's script `examples/01-nuclear-cytoplasmic-ratio/nuc_cyto_ratio.py` is byte-identical to the gist (LF only, sha256 `e03bf977331ca91e440d16b2583e3655e8b396f1568ea76391bc33c0662f3286`). Regenerate it only with `python` (see below), never hand-edit.
 - The article text was extracted from `AI_For_Image_Analysis.pdf` with `pypdf` to pull exact numbers/wording. The PDF is gitignored; don't commit it or its extracts.
-- Example 1 images live in `images/` (user-provided): `003003-10.tif` (gitignored) plus `Overlay1.png`/`Overlay2.png`, copied into `examples/01-nuclear-cytoplasmic-ratio/outputs/` as `chat_run1_overlay.png`/`chat_run2_overlay.png`. `script_overlay.png` there is a **4px placeholder** pending the user's real output; `results.csv` doesn't exist yet.
+- Example 1 images live in `images/` (user-provided): `003003-10.tif` (gitignored) plus `Overlay1.png`/`Overlay2.png`, copied into `examples/01-nuclear-cytoplasmic-ratio/outputs/` as `chat_run1_overlay.png`/`chat_run2_overlay.png`. `Overlay1` = chat run 1, `Overlay2` = chat run 2 (assumed in order). `Overlay3` (the script's overlay, i.e. `script_overlay.png`) and the composite image are still missing; `script_overlay.png` there is a **4px placeholder** and `results.csv` doesn't exist yet. The `images/` folder is not referenced by the build; the authoritative copies are the `.png` files under `examples/01-nuclear-cytoplasmic-ratio/outputs/`.
+- The plan's Example 1 "tempting approach" prompt differs from the article: the article says "the **yellow protein**", but the user corrected it to "the protein in **channel 4**". Use the corrected wording in Example 1.
 - Nothing new has been committed since the initial commit. Single branch `master`, no remote.
 - `AI_For_Image_Analysis.pdf` (repo root) is the **source article** ("AI for image analysis – reproducibility is key"), which plan section 3 lists as input #1. It is deliberately **gitignored**. Read it, but never commit it.
 
@@ -53,8 +54,8 @@ A **Quarto book** of worked examples teaching non-computational biologists to us
 - Audience has little or no programming experience. Explain jargon the first time it appears and don't assume CLI, conda or Git knowledge.
 - Every example uses exactly the template sections in plan section 6, in that order. Stubs (02–06) fill in only "At a glance" and "The question", add the "Work in progress" callout, and leave `TODO` under every other heading.
 - Prepare `.github/workflows/publish.yml`, but **never push, add a remote or enable Pages**.
-- Licensing: CC-BY 4.0 for text, MIT for code, **pending user confirmation** (BSD-3 is the alternative).
+- Licensing: **CC BY-SA 4.0 for the whole repo** (text and code together, single licence). This replaces the plan's split; see plan section 2. Confirmed by the user 2026-10-30.
 
 ## Open questions to raise with the user
 
-See plan section 11 (title/authors, code licence, script date and Python/Cellpose versions, dataset hosting and redistribution, whether to keep all five stubs, repo URL). The final report must list every remaining `TODO`, grouped into "needs user input" and "needs verification".
+See plan section 11 (title/authors, script date and Python/Cellpose versions, dataset hosting and redistribution, whether to keep all five stubs, repo URL). The code-licence question is resolved: CC BY-SA 4.0 for the whole repo. The final report must list every remaining `TODO`, grouped into "needs user input" and "needs verification".
