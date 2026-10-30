@@ -1,3 +1,15 @@
 # pixi environments
 .pixi/*
 !.pixi/config.toml
+AI_For_Image_Analysis.pdf
+
+# Quarto build output and cache
+_book/
+.quarto/
+
+# Raw microscopy image data (never commit; reference by DOI or URL instead)
+*.tif
+*.tiff
+*.czi
+*.nd2
+*.lif
