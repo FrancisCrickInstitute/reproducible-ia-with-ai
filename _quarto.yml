@@ -1,0 +1,40 @@
+project:
+  type: book
+  output-dir: _book
+
+book:
+  title: "TODO: confirm title with user"
+  author: "TODO"
+  repo-url: "TODO"
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - principles.qmd
+    - getting-started.qmd
+    - part: "Worked examples"
+      chapters:
+        - examples/01-nuclear-cytoplasmic-ratio/index.qmd
+        - examples/02-counting-nuclei-batch/index.qmd
+        - examples/03-colocalisation/index.qmd
+        - examples/04-time-lapse-intensity/index.qmd
+        - examples/05-morphology-and-calibration/index.qmd
+        - examples/06-fiji-macro/index.qmd
+    - resources.qmd
+  appendices:
+    - glossary.qmd
+    - contributing.qmd
+
+bibliography: references.bib
+
+filters:
+  - include-code-files
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+
+execute:
+  enabled: false

@@ -1,0 +1,57 @@
+---
+title: "TODO: Example title"
+---
+
+::: {.callout-note}
+## At a glance
+- **Biological question:** TODO
+- **Data:** TODO (link, DOI, licence)
+- **Tools:** TODO (e.g. Python, Cellpose 3)
+- **Difficulty:** Beginner / Intermediate
+:::
+
+## The question
+What a biologist wants to know, in plain language, and why it matters.
+
+## The tempting approach
+What happens if you upload the image(s) and ask a vague question.
+What varied or went wrong. Show the evidence (outputs, tables).
+
+## Why that's a problem
+Link the specific issues back to the principles page.
+
+## A better approach: ask for a script
+### The prompt
+The verbatim prompt, in a block. Annotate *why* each part is there
+(channels described, tool named, outputs specified, comments requested).
+
+### The script
+{include the .py file via include-code-files}
+Link to download it.
+
+### What the script does, in plain English
+A numbered walkthrough of the steps. No code knowledge needed.
+
+## Running it yourself
+The environment file, commands, and expected runtime and hardware.
+Link to getting-started.qmd.
+
+## Results
+The overlay image and results table.
+
+## Checking the results
+Overlay inspection, then a manual spot check, then a sanity check
+against biological expectation. Note the method choices that
+affect the result.
+
+## What domain knowledge helped here
+What you needed to know to write the good prompt or spot problems.
+
+## Limitations and variations
+What this script doesn't handle, and how you might adapt it.
+
+## Provenance
+Model, date, and verbatim prompt (or a link to PROVENANCE.md).
+
+## Further reading
+Links to relevant chapters in external resources.

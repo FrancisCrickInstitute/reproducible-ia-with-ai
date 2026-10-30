@@ -1,0 +1,12 @@
+name: yap
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - cellpose>=3,<4
+      - tifffile
+      - scikit-image
+      - matplotlib
+      - pandas

@@ -1,0 +1,25 @@
+---
+title: "Four principles"
+---
+
+Four principles run through every example in this guide. They apply whichever AI tool you use.
+
+::: {.callout-note}
+The examples in this guide name specific models (such as Claude or ChatGPT), and those names will date quickly. The principles below will not.
+:::
+
+## 1. Don't upload images to a chat assistant
+
+It is tempting to drop an image into a chat and ask the assistant to "analyse" it. Resist this. The results can vary between runs, the method is hidden from you, and there are data-protection concerns in sending your images to a third party. Instead, describe the image and ask for a script.
+
+## 2. Ask the LLM to write a script
+
+Describe your images in words, and ask the assistant to write a script that does the analysis. A script can be inspected, saved, shared and rerun by anyone, without an LLM. That is what makes the result reproducible.
+
+## 3. Reproducible is not the same as correct
+
+A script that runs the same way every time is reproducible, but it can still be wrong. Always validate the result: look at the segmentation overlay first, then spot-check a few measurements yourself, for example by hand in Fiji.
+
+## 4. Domain knowledge still matters
+
+A vague prompt lets the LLM make the key methodological decisions for you. To ask for the right thing, you need to know what to ask for. The better you understand your images and the question, the better your prompt, and the better the script it produces.

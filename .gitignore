@@ -13,3 +13,9 @@ _book/
 *.czi
 *.nd2
 *.lif
+
+# IDE
+.idea/
+
+/.quarto/
+**/*.quarto_ipynb

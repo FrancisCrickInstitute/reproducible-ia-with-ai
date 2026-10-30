@@ -1,0 +1,30 @@
+---
+title: "Contributing"
+---
+
+Contributions are very welcome. A new worked example is the most valuable thing you can add.
+
+## Proposing a new example
+
+Before writing anything, open an issue describing the task you want to cover. This lets others point you at similar work and agree on the scope first.
+
+## Writing a new example
+
+1. Copy `examples/_template.qmd` into a new folder under `examples/`, named with a two-digit number and a short slug (for example `07-your-topic/`).
+2. Fill in the sections in the order given in the template. Do not add or remove headings.
+3. Add the example to the chapters list in `_quarto.yml`.
+
+A new example must include:
+
+- A **pinned environment** (`environment.yml`) listing the exact package versions used.
+- The **verbatim prompt** and its provenance (model name and the date it was generated).
+- A **validation section** that checks the result, not just a result.
+- **Publicly available sample data**, referenced by DOI or stable URL, with its licence noted. Do not commit image data to the repository.
+- No images committed to the repository; only small PNG figures and CSVs.
+
+## Style
+
+- Write in **British English** (analyse, colour, labelled, localisation).
+- Explain jargon the first time it appears, and assume the reader has little or no programming experience.
+- Do not invent results, citations, URLs or version numbers. Mark anything unverified with a visible `TODO`.
+- Show scripts with the `include-code-files` filter rather than pasting them in.

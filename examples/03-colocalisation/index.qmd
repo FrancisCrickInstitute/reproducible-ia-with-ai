@@ -1,0 +1,56 @@
+---
+title: "Colocalisation of two proteins"
+---
+
+::: {.callout-note}
+## At a glance
+- **Biological question:** Do two labelled proteins colocalise?
+- **Data:** TODO (link, DOI, licence)
+- **Tools:** TODO (e.g. Python)
+- **Difficulty:** Beginner / Intermediate
+:::
+
+::: {.callout-warning}
+## Work in progress
+This example is planned but not yet written. Contributions welcome. See [Contributing](../../contributing.qmd).
+:::
+
+## The question
+Whether two labelled proteins occupy the same places in the cell, which is often taken as evidence that they interact or share a location.
+
+## The tempting approach
+TODO
+
+## Why that's a problem
+TODO
+
+## A better approach: ask for a script
+### The prompt
+TODO
+
+### The script
+TODO
+
+### What the script does, in plain English
+TODO
+
+## Running it yourself
+TODO
+
+## Results
+TODO
+
+## Checking the results
+TODO
+
+## What domain knowledge helped here
+TODO
+
+## Limitations and variations
+TODO
+
+## Provenance
+TODO
+
+## Further reading
+TODO

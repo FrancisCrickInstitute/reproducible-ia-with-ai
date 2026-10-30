@@ -1,0 +1,63 @@
+---
+title: "Getting started"
+---
+
+This page takes you from having nothing installed to running your first script. It assumes no prior experience with the command line, conda or Git.
+
+## 1. Install Miniforge
+
+The examples in this guide need Python and a few Python packages. Rather than install these directly, we use a tool called **conda**, which creates isolated "environments" for each project so their packages don't conflict.
+
+Miniforge is a minimal installer for conda. Download it from TODO: verify link and follow the installer for your system, accepting the defaults.
+
+## 2. Open a terminal
+
+A terminal is where you type commands. How you open one depends on your system.
+
+- **Windows:** open the "Miniforge Prompt" from the Start menu (installed with Miniforge).
+- **macOS:** open Terminal from Applications > Utilities.
+- **Linux:** open your terminal application.
+
+The terminal shows a prompt ending in `$`, `>` or `%`. You type a command and press Enter to run it. The examples below show commands after a `$`; you type only the part after it.
+
+## 3. Download an example
+
+Each worked example has its own folder. Download the example you want to try, or clone the whole guide if you have Git installed. For Example 1 you need the folder `examples/01-nuclear-cytoplasmic-ratio/`.
+
+## 4. Create the environment
+
+Each example comes with an `environment.yml` file that lists the exact Python packages it needs. In the terminal, change into the example's folder, then run:
+
+```
+conda env create -f environment.yml
+```
+
+This downloads and installs the packages into a new environment. It can take a few minutes.
+
+## 5. Activate the environment
+
+```
+conda activate <environment-name>
+```
+
+The name is listed in the example's `environment.yml`. Once activated, the packages are available in that terminal.
+
+## 6. Run the script
+
+Run the example's Python script on the sample image:
+
+```
+python <script-name>.py <image-path>
+```
+
+Replace `<script-name>` and `<image-path>` with the names from the example.
+
+## 7. Find the outputs
+
+The script writes its outputs (such as overlay images and a results table) next to the script, or to an `outputs/` folder described in the example. Open them to check the result.
+
+## What to do when it goes wrong
+
+- Read the error message and look for the last line, which often names the problem.
+- Paste the full error into an LLM and ask what it means and how to fix it.
+- Ask on the [image.sc forum](https://forum.image.sc/) with the error and a description of what you were trying to do.

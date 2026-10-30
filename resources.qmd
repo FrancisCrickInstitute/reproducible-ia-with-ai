@@ -1,0 +1,28 @@
+---
+title: "Resources"
+---
+
+Deeper material, grouped by topic. Each entry notes what it is good for.
+
+## Fundamentals of image analysis
+
+- Pete Bankhead, *Analyzing Fluorescence Microscopy Images with ImageJ*: a free online textbook covering the fundamentals of measuring images in ImageJ/Fiji.
+
+## Reproducible research
+
+- *The Turing Way*: a community-written guide to reproducible, open research practice. TODO: verify link
+
+## AI and LLMs in research
+
+- Alan Turing Institute, "Using generative AI to write code: a guide for researchers" (Chalstrey & Grishina, 2024): guidance on using LLMs to produce code responsibly.
+- Aalto University, *Generative AI in Research Work* (Glerean & Silva, draft): practical advice on using generative AI in research workflows.
+
+## LLMs specifically for bioimage analysis
+
+- *AI in Microscopy: A BioImaging Guide* (HHMI Janelia): a Quarto-based guide to AI in microscopy, including material on using LLMs. TODO: verify link
+- Robert Haase's `bia-bob`: an assistant for bioimage analysis built on generative AI. TODO: verify link
+- Robert Haase's prompt engineering chapter, in his Bio-image Analysis Notebooks: a focused guide to writing effective prompts for image analysis.
+
+## Getting help
+
+- The image.sc forum: a community forum for help with specific image-analysis problems.

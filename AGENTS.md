@@ -8,8 +8,11 @@ A **Quarto book** of worked examples teaching non-computational biologists to us
 
 ## Current state (as of writing)
 
-- Tracked: `pixi.toml`, `.gitattributes`, `.gitignore`. Untracked: `pixi.lock`, `quarto-guide-build-plan.md`, `AGENTS.md`, `_extensions/`, `.idea/`. Nothing has been committed since the initial commit.
-- Plan step 1 (repo setup) is done: plan ignores added to `.gitignore`, `*.py -text` added to `.gitattributes`, and `include-code-files` 1.0.0 installed in `_extensions/quarto-ext/include-code-files/`. No `_quarto.yml` or `.qmd` content exists yet. Single branch `master`, no remote.
+- The book skeleton and all pages are written: `_quarto.yml`, the four supporting pages, `examples/_template.qmd`, Example 1 (full), and stubs 02–06. `quarto render` produces `_book/` with **no errors or warnings**.
+- Example 1's script `examples/01-nuclear-cytoplasmic-ratio/nuc_cyto_ratio.py` is byte-identical to the gist (LF only, sha256 `e03bf977331ca91e440d16b2583e3655e8b396f1568ea76391bc33c0662f3286`). Regenerate it only with `python` (see below), never hand-edit.
+- The article text was extracted from `AI_For_Image_Analysis.pdf` with `pypdf` to pull exact numbers/wording. The PDF is gitignored; don't commit it or its extracts.
+- Example 1 images live in `images/` (user-provided): `003003-10.tif` (gitignored) plus `Overlay1.png`/`Overlay2.png`, copied into `examples/01-nuclear-cytoplasmic-ratio/outputs/` as `chat_run1_overlay.png`/`chat_run2_overlay.png`. `script_overlay.png` there is a **4px placeholder** pending the user's real output; `results.csv` doesn't exist yet.
+- Nothing new has been committed since the initial commit. Single branch `master`, no remote.
 - `AI_For_Image_Analysis.pdf` (repo root) is the **source article** ("AI for image analysis – reproducibility is key"), which plan section 3 lists as input #1. It is deliberately **gitignored**. Read it, but never commit it.
 
 ## Gotchas / mismatches between the plan and the repo
@@ -33,7 +36,10 @@ A **Quarto book** of worked examples teaching non-computational biologists to us
 | Build site | `quarto render` (output to `_book/`) |
 | Local preview | `quarto preview` (long-running; run it in the background) |
 
-`--no-prompt` is there because `quarto add` otherwise asks for interactive confirmation. `check`, `--version` and `add` have been run. The filter was tested with a throwaway render: ` ```{.python include="file.py"} ` followed by an empty closing fence embeds the file. `render`/`preview` of the book itself haven't been run yet because there's no `_quarto.yml`.
+`--no-prompt` is there because `quarto add` otherwise asks for interactive confirmation. `check`, `--version`, `add` and `render` have all been run and the book builds cleanly.
+
+- Download example 1's script verbatim (LF-only, no CRLF) with `python -c "import urllib.request;open('examples/01-nuclear-cytoplasmic-ratio/nuc_cyto_ratio.py','wb').write(urllib.request.urlopen('https://gist.githubusercontent.com/djpbarry/0ceaeb94a30aa955bdf23922311623cf/raw').read())"`, then verify sha256 == `e03bf977…2f3286`. Editing tools may rewrite line endings; re-check the hash after touching it.
+- Extract text from the gitignored article PDF with `pypdf` (`from pypdf import PdfReader`), which is already installed in the miniconda Python on PATH.
 
 ## Hard rules (from the plan; these are the most common ways to fail)
 

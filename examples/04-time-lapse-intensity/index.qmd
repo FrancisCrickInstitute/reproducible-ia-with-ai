@@ -1,0 +1,56 @@
+---
+title: "Intensity changes in a time-lapse"
+---
+
+::: {.callout-note}
+## At a glance
+- **Biological question:** How does a reporter's intensity change over time in individual cells?
+- **Data:** TODO (link, DOI, licence)
+- **Tools:** TODO (e.g. Python)
+- **Difficulty:** Beginner / Intermediate
+:::
+
+::: {.callout-warning}
+## Work in progress
+This example is planned but not yet written. Contributions welcome. See [Contributing](../../contributing.qmd).
+:::
+
+## The question
+Track how the intensity of a fluorescent reporter changes over time within individual cells across frames of a time-lapse.
+
+## The tempting approach
+TODO
+
+## Why that's a problem
+TODO
+
+## A better approach: ask for a script
+### The prompt
+TODO
+
+### The script
+TODO
+
+### What the script does, in plain English
+TODO
+
+## Running it yourself
+TODO
+
+## Results
+TODO
+
+## Checking the results
+TODO
+
+## What domain knowledge helped here
+TODO
+
+## Limitations and variations
+TODO
+
+## Provenance
+TODO
+
+## Further reading
+TODO

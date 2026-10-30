@@ -1,0 +1,23 @@
+---
+title: "Introduction"
+---
+
+This guide is a set of **worked examples**, not a textbook. Each example takes one real image-analysis task, shows the tempting way to hand it to a large language model (LLM) such as ChatGPT or Claude, then shows a better way that produces something you can check, keep and rerun. The goal is not to teach image analysis from scratch, but to help you use AI tools without giving up reproducibility.
+
+The guide is written for biologists with **little or no programming experience**. You do not need to know how to write Python or use the command line to follow along; everything is explained as it appears.
+
+## The problem
+
+It is very tempting to drag an image into a chat window and ask the assistant to "analyse" it. This can feel like magic, but it hides a problem: the assistant makes a series of methodological choices for you, and it may not tell you what they were. Run the same request twice and you can get a different answer. [Example 1](examples/01-nuclear-cytoplasmic-ratio/index.qmd) demonstrates this directly, with the same vague prompt asked twice and producing two different results.
+
+## How the guide is organised
+
+The guide begins with [four principles](principles.qmd) that underpin everything else, then a [getting started](getting-started.qmd) page that shows you how to set up the tools and run a script. The worked examples follow, each following the same structure so you always know where to look. A [glossary](glossary.qmd) explains terms as they come up, and a [resources](resources.qmd) page points you to places to go deeper.
+
+## How to use an example
+
+Read the naive approach first, to see what can go wrong. Then read the better approach, which asks the assistant for a script instead. Finally, try running the script yourself on the provided data. Running it yourself is the point of the whole guide: a script is something you can inspect, save, share and rerun, with no AI involved.
+
+## Open source and contributions
+
+This guide is free to read, and its text and code are openly licensed. If you spot a mistake or would like to add an example, see the [contributing](contributing.qmd) page.

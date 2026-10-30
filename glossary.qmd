@@ -1,0 +1,43 @@
+---
+title: "Glossary"
+---
+
+**LLM (large language model).** A type of AI trained on large amounts of text, able to generate text and, increasingly, to write and run code in response to a request.
+
+**Chat assistant.** A program such as ChatGPT or Claude that lets you talk to an LLM through a chat window.
+
+**Prompt.** The text you type to ask an LLM to do something. A "vague" prompt leaves the method up to the model; a "specific" prompt spells out what you want.
+
+**Script.** A file of instructions that a computer can run. In this guide, scripts are written in Python.
+
+**Python.** A widely used programming language, popular for data analysis. Scripts in this guide are Python files ending in `.py`.
+
+**Environment (conda).** An isolated set of software packages created by conda, so that different projects can use different versions without conflict.
+
+**Segmentation.** Dividing an image into regions of interest, such as individual cells or nuclei, so they can be measured separately.
+
+**Mask.** The output of segmentation: an image marking which pixels belong to which region.
+
+**Cellpose.** A tool that segments cells and nuclei in microscopy images, often driven by deep learning.
+
+**Overlay.** A segmentation mask drawn on top of the original image so you can see whether it has outlined the cells correctly.
+
+**CSV.** A plain-text table format ("comma-separated values") that can be opened in a spreadsheet.
+
+**Mean intensity.** The average brightness of the pixels in a region, a way to measure how much of a labelled protein is present there.
+
+**Nuclear:cytoplasmic ratio.** A comparison of the amount of a protein in the nucleus versus the cytoplasm, often reported as a ratio of mean intensities.
+
+**Reproducibility.** The property that a result can be obtained again by someone else, or by you later, because the method is recorded and repeatable.
+
+**Validation.** The step of checking that a result is correct, for example by inspecting the segmentation overlay and spot-checking measurements by hand.
+
+**Fiji / ImageJ.** A freely available program for viewing and analysing microscopy images, widely used for manual checking and measurement.
+
+**Macro.** A small script that automates actions in Fiji/ImageJ, for point-and-click users.
+
+**Pixel size and calibration.** The real-world size of one pixel in an image, needed to convert pixel measurements to units such as micrometres (µm).
+
+**Bit depth.** The number of brightness levels an image can represent (so the range of intensity values).
+
+**Background subtraction.** Removing the image's background signal so that measurements reflect the signal of interest rather than the baseline.
