@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: >-
+  If you use this guide in your work, please cite it as below.
+title: "LLM-Assisted Bioimage Analysis: Worked Examples"
+abstract: >-
+  An open guide of worked examples teaching biologists how to use large
+  language models (LLMs) for microscopy image analysis reproducibly. Each
+  example contrasts a tempting, unreproducible approach with asking the LLM
+  to write a script that can be inspected, shared and rerun.
+type: generic
+authors:
+  - family-names: Barry
+    given-names: David J
+    orcid: "https://orcid.org/0000-0003-2763-5244"
+    affiliation: "The Francis Crick Institute, London, UK"
+repository-code: "https://github.com/FrancisCrickInstitute/reproducible-ia-with-ai"
+url: "https://franciscrickinstitute.github.io/reproducible-ia-with-ai/"
+license: CC-BY-SA-4.0
+keywords:
+  - image analysis
+  - microscopy
+  - bioimage analysis
+  - reproducibility
+  - large language models
+  - Python
+  - Quarto
+  - Cellpose
