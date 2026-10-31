@@ -1,5 +1,7 @@
 # LLM-Assisted Bioimage Analysis: Worked Examples
 
+[![Deploy site](https://github.com/FrancisCrickInstitute/reproducible-ia-with-ai/actions/workflows/publish.yml/badge.svg)](https://github.com/FrancisCrickInstitute/reproducible-ia-with-ai/actions/workflows/publish.yml) [![Site](https://img.shields.io/badge/site-live-blue)](https://franciscrickinstitute.github.io/reproducible-ia-with-ai/) [![License](https://img.shields.io/badge/License-CC%20BY--SA%204.0-green)](LICENSE) ![Commit activity](https://img.shields.io/github/commit-activity/y/FrancisCrickInstitute/reproducible-ia-with-ai?style=plastic)
+
 An open guide of worked examples showing biologists how to use large language models (LLMs) for microscopy image analysis *reproducibly*. The core message: don't upload your images to a chat assistant and ask it to "analyse" them. Ask it to write a script instead, inspect the script, and run it yourself.
 
 Built with [Quarto](https://quarto.org). The site is still under construction.
