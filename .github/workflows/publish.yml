@@ -2,7 +2,7 @@ name: Publish site
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -16,6 +16,9 @@ concurrency:
 
 jobs:
   build-and-publish:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -29,7 +32,11 @@ jobs:
       - name: Render the book
         run: quarto render
 
-      - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Upload the rendered site
+        uses: actions/upload-pages-artifact@v3
         with:
-          target: gh-pages
+          path: _book
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
